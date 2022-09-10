@@ -1,12 +1,19 @@
+"""Напишите программу, которая принимает на вход вещественное число и показывает сумму его цифр.
 
-num = int(input('Введите число '))
+Пример:
 
-mylist = ['qwer', 'asdf', '2456', '24', 'dpo', '7']
+- 6782 -> 23
+- 0,56 -> 11"""
 
-def find_number(n, lst):
-    return str(n) in lst
+num = ((input('Введите число: ')))
 
-print(find_number(num, mylist))
+a = (num.split('.'))
+b = "".join(a)
+c = [int(i) for i in b]
+
+print(f'Сумма цифр числа {num} равна {sum(c)}')
+
+
 
 
 
